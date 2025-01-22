@@ -1,11 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> First Program </h1>
-</body>
+<html>
+  <head>
+    <title>Simple Image Webpage with Sounds</title>
+    <style>
+      body {
+        background-color: #f0f0f0; /* Light gray background */
+        font-family: Arial, sans-serif;
+      }
+      header {
+        text-align: center;
+        background-color: #4CAF50; /* Green header background */
+        color: white;
+        padding: 20px;
+      }
+      .image-container {
+        text-align: center;
+        margin: 20px;
+      }
+      img {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+      }
+      .description {
+        text-align: center;
+        font-size: 16px;
+        color: #333;
+      }
+      audio {
+        display: block;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1>Animal Sounds Gallery</h1>
+    </header>
+
+    <div class="image-container">
+      <img src="https://via.placeholder.com/200" alt="Lion">
+      <p class="description">This is a lion.</p>
+      <audio controls>
+        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="image-container">
+      <img src="https://via.placeholder.com/200" alt="Cat">
+      <p class="description">This is a cat.</p>
+      <audio controls>
+        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+    <div class="image-container">
+      <img src="https://via.placeholder.com/200" alt="Dog">
+      <p class="description">This is a dog.</p>
+      <audio controls>
+        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+
+  </body>
 </html>
