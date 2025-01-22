@@ -1,70 +1,99 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Simple Image Webpage with Sounds</title>
+    <title>Animal Sounds</title>
     <style>
       body {
-        background-color: #f0f0f0; /* Light gray background */
-        font-family: Arial, sans-serif;
+        background-color: #e9ecef; 
+        font-family: Arial, sans-serif; 
       }
+      
+      /* Styling for the header */
       header {
-        text-align: center;
-        background-color: #4CAF50; /* Green header background */
+        text-align: center; 
+        background-color: #4CAF50; 
         color: white;
-        padding: 20px;
+        padding: 20px; 
       }
-      .image-container {
+
+      /* Styling for the table */
+      table {
+        width: 80%; 
+        margin: 20px auto; 
+        border-collapse: collapse; 
+        background-color: #ffffff; 
+      }
+
+      /* Styling for table cells */
+      td, th {
+        padding: 20px; 
         text-align: center;
-        margin: 20px;
+        border: 1px solid #ddd; 
+        background-color: #f9f9f9; 
       }
+
+      /* Styling for images */
       img {
-        width: 200px;
-        height: 200px;
-        margin: 10px;
+        width: 200px; 
+        height: 200px; 
       }
+
+    
       .description {
-        text-align: center;
-        font-size: 16px;
-        color: #333;
+        font-size: 16px; 
+        color: #333; 
       }
+
+      
       audio {
         display: block;
-        margin: 10px auto;
+        margin: 10px auto; 
       }
     </style>
   </head>
   <body>
 
+    <!-- Header section of the webpage -->
     <header>
-      <h1>Animal Sounds Gallery</h1>
+      <h1>Animal Sounds Gallery</h1> 
     </header>
 
-    <div class="image-container">
-      <img src="https://via.placeholder.com/200" alt="Lion">
-      <p class="description">This is a lion.</p>
-      <audio controls>
-        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+    <!-- Table to display images, descriptions, and audio controls -->
+    <table>
+      <!-- Table header row -->
+      <tr>
+        <th>Image</th> 
+        <th>Description</th> 
+        <th>Sound</th> 
+      </tr>
+      
+      <!-- Table row for Hamster -->
+      <tr>
+        <td><img src="Images/Hamster.jpg" alt="Hamster"></td> 
+        <td class="description">Hamster</td> 
+        <td><audio controls> 
+            <source src="audio/hamaudio.mp3" type="audio/wav"> 
+        </audio></td>
+      </tr>
 
-    <div class="image-container">
-      <img src="https://via.placeholder.com/200" alt="Cat">
-      <p class="description">This is a cat.</p>
-      <audio controls>
-        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+      <!-- Table row for Capybara -->
+      <tr>
+        <td><img src="Images/Capy.jpg" alt="Capybara"></td> 
+        <td class="description">Capybara</td> 
+        <td><audio controls> 
+            <source src="audio/Capyaud.mp3" type="audio/wav"> 
+        </audio></td>
+      </tr>
 
-    <div class="image-container">
-      <img src="https://via.placeholder.com/200" alt="Dog">
-      <p class="description">This is a dog.</p>
-      <audio controls>
-        <source src="https://www.soundjay.com/button/beep-07.wav" type="audio/wav">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+      <!-- Table row for Cat -->
+      <tr>
+        <td><img src="Images/cat.jpg" alt="Cat"></td>
+        <td class="description">Cat</td> 
+        <td><audio controls> 
+            <source src="audio/cataud.mp3" type="audio/wav"> 
+        </audio></td>
+      </tr>
+    </table>
 
   </body>
 </html>
